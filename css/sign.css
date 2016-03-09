@@ -1,0 +1,172 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+h3 {
+	font-size: 35px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* Button */
+
+.btn-custom {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
+	color: #fff;
+}
+.btn-custom:hover, .btn-custom:focus, .btn-custom:active {
+	outline: 0;
+	opacity: 0.8;
+	color: #fff;
+}
+.btn-custom.btn-custom-google-plus {
+	background-color: #DD4B39;
+}
+.btn-custom.btn-custom-facebook {
+	background: #4862A3;
+}
+.btn-custom.btn-custom-twitter {
+	background: #55ACEE;
+}
+
+.btn-custom i {
+	padding-right: 5px;
+	vertical-align: middle;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+/* Form */
+
+.form-box {
+	margin-top: 35px;
+
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: #fff;
+	-moz-border-radius: 4px 4px 0 0;
+	-webkit-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	text-align: left;
+}
+/*===== Line =====*/
+.divider {
+    width:100%;
+    text-align:center;
+    color: #b4b4bf;
+}
+
+.divider hr {
+	border-top:1px dotted #b4b4bf;
+    margin-left:auto;
+    margin-right:auto;
+    width:45%;
+	margin-top: 12px;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float:right;
+}
+
+
+.form-bottom {
+	background: #fff;
+	-moz-border-radius: 0 0 4px 4px;
+	-webkit-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.form-bottom form textarea {
+	height: 100px;
+}
+
+.form-bottom form button.btn {
+	width: 100%;
+}
+
+.form-bottom form .input-error {
+	border-color: #4aaf51;
+}
+
+
+/* Input Fieldset style */
+.flp {
+	padding: 0 20px;
+	margin: 0 auto;
+}
+/*Let's place the label over the input*/
+.flp div {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.flp input, .flp label {
+	width: 100%;
+	display: block;
+	font: inherit;
+	font-size: 14px;
+	line-height: 20px;
+	/*fixed height for FF line height issue.
+	 height = 24(lineheight) + 10*2(padding) + 2(border)*/
+	height: 46px;
+	border: 1px solid #999;
+}
+.flp input:active, .flp input:focus {
+	border: 1px solid #f00;
+	box-shadow: 2px 0px 3px 2px pink;
+}
+.flp input {
+	padding: 10px;
+	outline: none;
+	border-radius: 0px;
+}
+.flp label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*left/right padding will be 2px less, adjusted by padding on .ch*/
+	padding: 10px 8px;
+	border-color: transparent;
+	color: #666;
+	cursor: text;
+}
+
+/*label styles*/
+.ch {
+	display: block;
+	float: left;
+	position: relative; /*for upward animation*/
+	background: white;
+}
+.ch:first-child {
+	padding-left: 2px;
+}
+.ch:last-child {
+	padding-right: 2px;
+}
+
+/*active input label*/
+.focussed {
+	/*when any input is already focussed clicking on it(label) again won't do anything*/
+	pointer-events: none;
+}
+
+/*media query*/
+@media (min-width: 320px) and (max-width: 1199px) {
+
+	h3 {
+		font-size: 26px;
+	}
+
+
+}
