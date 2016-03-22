@@ -1,5 +1,10 @@
 jQuery(document).ready(function() {
 
+	$('.selectpicker').selectpicker({
+		width: '100%',
+		size : 3,
+	});
+
 	$(".flp label").each(function() {
 		var sop = '<span class="ch">';
 		//span opening
@@ -37,4 +42,4 @@ jQuery(document).ready(function() {
 		}
 	});
 
-}); 
+});

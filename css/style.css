@@ -47,9 +47,22 @@ body {
  ————————————————————————————————————————————*/
 
 /*————————————————————————————————————————————
- * Menubar
+ * searchbar
  ————————————————————————————————————————————*/
-
+.select .select-box {
+	width: 100%;
+}
+.select .bootstrap-select .btn {
+	padding: 10px 5px;
+	border: medium none;
+	border-radius: 0px;
+	margin-right: 0px;
+}
+.select .bootstrap-select .open {
+	min-width: 100%;
+	border: medium none;
+	border-radius: 0px;
+}
 /*————————————————————————————————————————————
  * date
  ————————————————————————————————————————————*/
