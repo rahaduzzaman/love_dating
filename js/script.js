@@ -43,7 +43,8 @@ jQuery(document).ready(function() {
 	});
 
 	// 	Owl Carousel
-	var owl = $('.owl-carousel');
+	// For Members
+	var owl = $('.members');
 	owl.owlCarousel({
 		center: true,
 		loop : true,
@@ -74,5 +75,28 @@ jQuery(document).ready(function() {
 	// }
 	// e.preventDefault();
 	// });
+	
+	//For Client say
+	var cls = $('.client-speech');
+	cls.owlCarousel({
+		loop : true,
+		nav : false,
+		margin : 30,
+		autoHeight : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600 : {
+				items : 1
+			},
+			960 : {
+				items : 1
+			},
+			1200 : {
+				items : 1
+			}
+		}
+	});
 
 });

@@ -203,11 +203,11 @@ body {
  ————————————————————————————————————————————*/
 
 /*Slider Style customization */
-.owl-theme .owl-controls {
+.all-member .owl-theme .owl-controls {
 	margin-top: 50px;
 }
- 
-.owl-theme .owl-dots .owl-dot span {
+
+.all-member .owl-theme .owl-dots .owl-dot span {
 	width: 10px;
 	height: 10px;
 	margin: 15px 3px;
@@ -223,13 +223,13 @@ body {
 	-moz-border-radius: 30px;
 	border-radius: 30px;
 }
-.owl-theme .owl-dots .owl-dot span {
+.all-member .owl-theme .owl-dots .owl-dot span {
 	background-color: transparent;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span, .all-member .owl-theme .owl-dots .owl-dot:hover span {
 	background: transparent
 }
-.owl-theme .owl-dots .owl-dot.active span {
+.all-member .owl-theme .owl-dots .owl-dot.active span {
 	background-color: #ff0066;
 	transform: scale(1.0);
 	-webkit-transform: scale(1.0);
@@ -259,6 +259,61 @@ body {
 /*————————————————————————————————————————————
  * social
  ————————————————————————————————————————————*/
+.client-say {
+	background-image: url('../images/bg-social.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.client-say .shadow {
+	position: relative;
+	background-color: rgba(255,0,102,0.7);
+}
+.client-say  .owl-theme .owl-controls {
+	margin-top: 10px;
+}
+
+.client-say .owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 15px 3px;
+	border: 1px solid #FFFFFF;
+	display: block;
+	-webkit-backface-visibility: visible;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	-ms-transition: opacity 200ms ease;
+	-o-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+.client-say .owl-theme .owl-dots .owl-dot span {
+	background-color: transparent;
+}
+.client-say .owl-theme .owl-dots .owl-dot.active span, .client-say .owl-theme .owl-dots .owl-dot:hover span {
+	background: transparent
+}
+.client-say .owl-theme .owl-dots .owl-dot.active span {
+	background-color: #FFFFFF;
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+}
+.client-speech .say p {
+	line-height: 24px;
+}
+
+@media only screen and (max-width: 500px) {
+	.client-speech .say p {
+		font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+}
 
 /*————————————————————————————————————————————
  * Statistics
