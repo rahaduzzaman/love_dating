@@ -87,60 +87,175 @@ body {
  * testimonial
  ————————————————————————————————————————————*/
 .testimonial {
-	width: 100%;
-	position: relative;
 	background-image: url('../images/bg-seccess.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.testimonial:before {
-	width:100%;
-	height:100%;
-	content: "";
+.testimonial .shadow {
+	position: relative;
+	background-color: rgba(102,0,153,0.5);
+}
+.img-conainer {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	display: block;
+	box-shadow: 1px 1px 2px #333;
+	-moz-box-shadow: 1px 1px 2px #333;
+	-o-box-shadow: 1px 1px 2px #333;
+	-webkit-box-shadow: 1px 1px 2px #333;
+}
+
+.image-title {
 	position: absolute;
-	background: rgba(102,0,153,0.5);
+	bottom: 0;
+	width: 100%;
 }
-.test .image {
-	position:relative;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
+.image-title h3 {
+	font-weight: 800;
+	margin-bottom: 0px;
+}
+.img-hover {
+	position: absolute;
+	bottom: 0;
+	background: rgba(212,19,115, 0.6);
+	width: 100%;
+	height: 60%;
+	display: none;
+}
+.img-hover {
+	line-height: 25px;
+}
+.img-conainer:hover .img-hover {
+	display: block;
+}
+.img-conainer:hover .image-title {
+	display: none;
+}
+.btn-mod:hover, .btn-mod:focus, .btn-mod:active {
+	color: #330066
+}
+
+@media only screen and (max-width: 800px) {
+	.img-conainer {
+		width: 100%;
+		height: 400px;
+		position: relative;
+		display: block;
+		box-shadow: 1px 1px 2px #333;
+		-moz-box-shadow: 1px 1px 2px #333;
+		-o-box-shadow: 1px 1px 2px #333;
+		-webkit-box-shadow: 1px 1px 2px #333;
+	}
+	.img-conainer .img-hover h3 {
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	.img-conainer .img-hover p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.img-hover {
+		position: absolute;
+		bottom: 0;
+		background: rgba(212,19,115, 0.6);
+		width: 100%;
+		height: 80%;
+		display: none;
+	}
 
 }
-.test .image .img-title {
-  visibility: visible;
-  position: absolute;
-  bottom: 0;
-  font-weight: 800;
-  background: rgba(255,0,102, 1);
-  width: 100%;
-  text-align: center;
-  color: #fff;
 
-}
-.test .image:hover .img-title {
-	visibility:hidden;
-
-}
-.test .image .img-hover {
-	visibility:hidden;
-  position: absolute;
-  bottom: 0;
-  background: rgba(212,19,115, 0.6);
-  width: 100%;
-  height: 70%;
-  text-align: center;
-
-}
-.test .image:hover .img-hover {
-	visibility: visible;
+@media only screen and (max-width: 500px) {
+	.img-conainer {
+		width: 100%;
+		height: 500px;
+		position: relative;
+		display: block;
+		box-shadow: 1px 1px 2px #333;
+		-moz-box-shadow: 1px 1px 2px #333;
+		-o-box-shadow: 1px 1px 2px #333;
+		-webkit-box-shadow: 1px 1px 2px #333;
+	}
+	.img-hover {
+		position: absolute;
+		bottom: 0;
+		background: rgba(212,19,115, 0.6);
+		width: 100%;
+		height: 60%;
+		display: none;
+	}
+	.img-conainer .img-hover h3 {
+		font-size: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.img-conainer .img-hover p {
+		font-size: 16px;
+		line-height: 22px;
+	}
 
 }
 /*————————————————————————————————————————————
  * Member
  ————————————————————————————————————————————*/
 
+/*Slider Style customization */
+.owl-theme .owl-controls {
+	margin-top: 50px;
+}
+ 
+.owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	margin: 15px 3px;
+	border: 1px solid #ff0066;
+	display: block;
+	-webkit-backface-visibility: visible;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	-ms-transition: opacity 200ms ease;
+	-o-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+.owl-theme .owl-dots .owl-dot span {
+	background-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: transparent
+}
+.owl-theme .owl-dots .owl-dot.active span {
+	background-color: #ff0066;
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-o-transform: scale(1.0);
+}
+.member {
+	margin-bottom: 20px;
+}
+.member .img {
+	height: 150px;
+}
+.member .img img {
+	margin-top: 20px;
+	height: 100%;
+}
+.owl-item .member {
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+}
+
+.owl-item.center .member {
+	transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	z-index: 999;
+}
 /*————————————————————————————————————————————
  * social
  ————————————————————————————————————————————*/

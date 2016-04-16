@@ -261,7 +261,7 @@ h2, .h2 {
 	font-size: 30px;
 }
 h3, .h3 {
-	font-size: 26px;
+	font-size: 24px;
 }
 h4, .h4 {
 	font-size: 20px;
@@ -288,10 +288,10 @@ h6, .h6 {
 	font-size: 20px
 }
 .text-sm {
-	font-size: 16px;
+	font-size: 18px;
 }
 .text-xs {
-	font-size: 14px;
+	font-size: 16px;
 }
 .text-xxs {
 	font-size: 12px;
@@ -301,9 +301,6 @@ h6, .h6 {
 /*=======bg Colors=========*/
 .bg-white {
 	background-color: #FFFFFF;
-}
-.bg-nevi {
-	background-color: #2F4052;
 }
 .bg-light-pink {
 	background-color: #F0D9F0;

@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
 	$('.selectpicker').selectpicker({
-		width: '100%',
+		width : '100%',
 		size : 3,
 	});
 
@@ -41,5 +41,38 @@ jQuery(document).ready(function() {
 			});
 		}
 	});
+
+	// 	Owl Carousel
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		center: true,
+		loop : true,
+		nav : false,
+		margin : 0,
+		itemsScaleUp : true,
+		autoHeight : true,
+		responsive : {
+			0 : {
+				items : 2
+			},
+			600 : {
+				items : 5
+			},
+			960 : {
+				items : 8
+			},
+			1200 : {
+				items : 10
+			}
+		}
+	});
+	// owl.on('mousewheel', '.owl-stage', function(e) {
+	// if (e.deltaY > 0) {
+	// owl.trigger('next.owl');
+	// } else {
+	// owl.trigger('prev.owl');
+	// }
+	// e.preventDefault();
+	// });
 
 });
