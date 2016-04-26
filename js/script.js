@@ -98,5 +98,7 @@ jQuery(document).ready(function() {
 			}
 		}
 	});
+	
+	$("#demo").birthdayPicker();
 
 });
