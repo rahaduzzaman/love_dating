@@ -423,6 +423,24 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 68px 0px;
+}
+.newslatter form input {
+	width: 70%;
+	font-size: 21px;
+	line-height: 24px;
+	padding: 15px;
+	border: 3px solid #ff0066;
+}
+.newslatter form button {
+	position: absolute;
+	border: medium none;
+	border-radius: 0px;
+	margin-left: -140px;
+	margin-top: 6px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 12px 15px;
 }
 /*————————————————————————————————————————————
  * Footer
