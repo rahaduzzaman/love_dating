@@ -62,6 +62,48 @@ body {
 	background-color: #5C1078;
 }
 
+/* Slider carousel style */
+
+.title-member .owl-controls {
+  margin: 0;
+}
+
+.title-member .owl-controls .owl-nav [class*=owl-] {
+  background: #FFF;
+  color: #3F4044;
+  font-size: 12px;
+  padding: 7px 9px 7px 8px;
+  border-radius: 50%;
+}
+
+.title-member .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #FFF;
+  color: #000;
+}
+
+.title-member .owl-controls .owl-prev,
+.title-member .owl-controls .owl-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 30px;
+  margin: auto !important;
+}
+
+.title-member .owl-controls .owl-prev {
+  left: 0;
+}
+
+.title-member .owl-controls .owl-next {
+  right: 0;
+}
+
+.title-member .owl-controls .owl-dots {
+  display: none !important;
+}
+.title-member .item .member .img {
+	width: 157px;
+}
 /*————————————————————————————————————————————
  * searchbar
  ————————————————————————————————————————————*/
@@ -380,41 +422,21 @@ body {
 	border: none;
 }
 /*select customize*/
-.selectdiv {
-	position: relative;
-	float: left;
+.date .select-box {
+	width: 32%;
+	display: inline-block;
 }
-.selectdiv:after {
-	content: "<>";
-	font: 17px "Consolas", monospace;
-	right: 5px;
-	-webkit-transform: rotate(90deg);
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	transform: rotate(90deg);
-	/*Adjust for position however you want*/
-	top: 10px;
-	/*left line */
-	position: absolute;
-	pointer-events: none;
+.date .bootstrap-select .btn {
+	padding: 10px 5px;
+	border: medium none;
+	border-radius: 0px;
+	margin-right: 0px;
 }
-
-.selectdiv select {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-	/* Add some styling */
-	display: block;
-	height: 40px;
-	padding: 0px 30px 0px 10px;
-	font-size: 16px;
-	line-height: 1.75;
-	border: none;
-	background-image: none;
-	-ms-word-break: normal;
-	word-break: normal;
+.date .bootstrap-select .open {
+	min-width: 100%;
+	border: medium none;
+	border-radius: 0px;
 }
-
 /*————————————————————————————————————————————
  * Subscribe
  ————————————————————————————————————————————*/
